@@ -5,20 +5,25 @@ img {
     max-width: 100%;
     max-height: auto;
     margin: 5px;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
 }
 
 .container {
     display: flex;
+    width: auto;
+    height: 100vh;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .slideshow-container {
     display: flex;
     width: 100%;
-    height: auto;
+    height: 100%;
     position: relative;
-    margin: 0 auto;
     max-width: 48rem;
     align-items: center;
     justify-content: center;
@@ -28,9 +33,6 @@ img {
 .next {
   cursor: pointer;
   position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
   margin-top: -50px;
   color: gray;
   font-weight: bold;
@@ -46,22 +48,16 @@ img {
 
 /* Position the "next button" to the right */
 .next {
+  padding-left: 50px;  
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 .prev {
+    padding-right: 50px;
     left: 0;
     border-radius: 3px 0 0 3px;
 }
-
-.images {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: mandatory;
-}
-
-
 
 .desc {
     text-align: center;
@@ -79,23 +75,19 @@ img {
   }
 
 .navBar {
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    padding-bottom: 50px;
-}
-  
-.navBar li {
-    float: right;
+    padding-bottom: 25px;
 }
 
-.steps li {
-    font-size: 25px;
-    text-align: right;
+.push {
+    margin-left: auto;
 }
   
-li a, .dropbtn {
+div a, .dropbtn {
     display: inline-block;
     color: black;
     text-align: center;
@@ -103,7 +95,17 @@ li a, .dropbtn {
     text-decoration: none;
     font-size: 18px;
 }
+
+.name {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 40px;
+}
   
-li a:hover, .dropdown:hover .dropbtn {
+a:hover, .dropdown:hover .dropbtn {
     background-color: cornflowerblue;
 }
