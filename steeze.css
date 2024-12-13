@@ -1,6 +1,6 @@
 img {
     position: static;
-    border: 2px solid black;
+    border: 15px solid ghostwhite;
     position: static;
     max-width: 100%;
     max-height: auto;
@@ -17,6 +17,16 @@ img {
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
+}
+
+.front-page {
+    display: flex;
+    width: auto;
+    height: 100%;
+    flex-wrap: nowrap;
+    position: relative;
+    flex-direction: column;
 }
 
 .slideshow-container {
@@ -48,13 +58,15 @@ img {
 
 /* Position the "next button" to the right */
 .next {
-  padding-left: 50px;  
+  margin-right: 15%;  
+  margin-left: auto;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 .prev {
-    padding-right: 50px;
+    margin-left: 15%;
+    margin-right: auto;
     left: 0;
     border-radius: 3px 0 0 3px;
 }
@@ -81,6 +93,7 @@ img {
     padding: 0;
     overflow: hidden;
     padding-bottom: 25px;
+    flex-wrap: wrap;
 }
 
 .push {
@@ -103,7 +116,7 @@ div a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    margin-left: 10px;
+    margin-left: 25px;
     font-size: 40px;
     font-weight: 450;
     font-family: Baskerville, serif;
