@@ -63,7 +63,7 @@ img {
     text-align: center;
     font-size: 25px;
     padding-bottom: 20px;
-    font: "Times New Roman";
+    font-family: Baskerville, serif;
     font-weight: 500;
 }
 
@@ -87,13 +87,14 @@ img {
     margin-left: auto;
 }
   
-div a, .dropbtn {
+div a {
     display: inline-block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 22px;
+    font-family: Baskerville, serif;
 }
 
 .name {
@@ -104,8 +105,10 @@ div a, .dropbtn {
     text-decoration: none;
     margin-left: 10px;
     font-size: 40px;
+    font-weight: 450;
+    font-family: Baskerville, serif;
 }
   
-a:hover, .dropdown:hover .dropbtn {
+#nav :hover {
     background-color: cornflowerblue;
 }
