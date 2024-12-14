@@ -10,6 +10,13 @@ img {
     scroll-snap-type: mandatory;
 }
 
+p {
+    max-width: 40%; 
+    font-size: 25px; 
+    margin-right: 10%;
+    font-family: Baskerville, serif;
+}
+
 .container {
     display: flex;
     width: auto;
